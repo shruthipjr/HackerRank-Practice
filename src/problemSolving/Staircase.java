@@ -5,22 +5,22 @@ import java.util.Scanner;
 public class Staircase {
 	
 	static void staircase(int n) {
-		/*for(int i=0; i<n;i++){
-			//System.out.print(" ");
-			//for(int j=i;j<n;j++){
-			for(int j=(n-1)-i; j<n;j++){
+		
+		
+		for(int i=1; i<=n; i++){
+			
+			for(int j=1; j<=(n-i); j++){
 				
-				System.out.print("#");
-				
+				System.out.print(" ");
 			}
+			
+			for(int k=1; k<=i; k++){
+				System.out.print("#");
+			}
+			
 			System.out.println();
-		}*/
-		 String str="#";
-	        for (int i=0;i<n;i++)
-	            { 
-	            System.out.printf("%"+(n+1)+"s",str+"\n");
-	            str=str+"#";
-	            }
+		}
+		
 	}
 
 	public static void main(String[] args) {
